@@ -9,7 +9,7 @@ function App() {
 
     <div className="demo-big-content">
       <Layout>
-        <Header title="Nicholas Kimball" scroll>
+        <Header className="header-color" title="Nicholas Kimball" scroll>
           <Navigation>
             <Link to="/aboutme">About Me</Link>
             <Link to="/resume">Resume</Link>
