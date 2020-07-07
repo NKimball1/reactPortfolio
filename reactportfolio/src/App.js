@@ -4,6 +4,7 @@ import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
 
+
 function App() {
   return (
 
@@ -27,9 +28,14 @@ function App() {
         </Drawer>
         <Content>
           <div className="page-content" />
+          
           <Main />
+         
         </Content>
+        
       </Layout>
+
+      
     </div>
   );
 }
