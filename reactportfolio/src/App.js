@@ -5,6 +5,7 @@ import Main from './components/main';
 import { Link } from 'react-router-dom';
 
 
+
 function App() {
   return (
 
@@ -30,6 +31,8 @@ function App() {
           <div className="page-content" />
           
           <Main />
+       
+         
          
         </Content>
         

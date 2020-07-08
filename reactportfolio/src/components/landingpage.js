@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import ParticleComponent from './particlecomponent';
 
@@ -58,6 +58,11 @@ class Landing extends Component {
             <ParticleComponent />
                 
             </div>
+
+            
+              
+           
+            
 
 
         )
