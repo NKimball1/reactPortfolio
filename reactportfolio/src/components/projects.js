@@ -16,14 +16,18 @@ class Projects extends Component {
                 <div className='projects-grid'>
                 {/*project 1*/}
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: 'black', height: '176px',  background:'url() center / cover'}}>Tab 0 P1</CardTitle>
+                    <CardTitle style={{color: 'black', height: '176px',  background:'url(https://raw.githubusercontent.com/alexdo21/MixTech/master/client/public/mix.png) center / cover'}}>MixTech</CardTitle>
                     <CardText>
                         Text blah blah blah
+                        ASDasdASDF
+                        ASDFASFDASDFASDF
+                        ASDFASDFASDF
                     </CardText>
                     <CardActions border>
-                        <Button Colored>Github</Button>
+                        <Button Colored href='https://github.com/alexdo21/MixTech' rel="noopener noreferrer" target="_blank">Github</Button>
+                        
                     </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
+                    <CardMenu style={{color: '#101010'}}>
                         <IconButton name="share" />
                     </CardMenu>
                 </Card>
@@ -42,6 +46,35 @@ class Projects extends Component {
                         <IconButton name="share" />
                     </CardMenu>
                 </Card>
+
+                 {/*project 3*/}
+                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                    <CardTitle style={{color: 'black', height: '176px',  background:'url() center / cover'}}>Tab 0 P2</CardTitle>
+                    <CardText>
+                        Text blah blah blah
+                    </CardText>
+                    <CardActions border>
+                        <Button Colored>Github</Button>
+                    </CardActions>
+                    <CardMenu style={{color: '#fff'}}>
+                        <IconButton name="share" />
+                    </CardMenu>
+                </Card>
+
+                {/*project 4*/}
+                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                    <CardTitle style={{color: 'black', height: '176px',  background:'url() center / cover'}}>Tab 0 P2</CardTitle>
+                    <CardText>
+                        Text blah blah blah
+                    </CardText>
+                    <CardActions border>
+                        <Button Colored>Github</Button>
+                    </CardActions>
+                    <CardMenu style={{color: '#fff'}}>
+                        <IconButton name="share" />
+                    </CardMenu>
+                </Card>
+
 
                 </div>
             )
@@ -64,16 +97,17 @@ class Projects extends Component {
 
     render() {
         return (
+           <div class ="mdl-layout__content" style={{width:'100%', height:'100%'}}>
+
            
             <div className="category-tabs">
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>tab0</Tab>
-                    <Tab>tab1</Tab>
-                    <Tab>tab2</Tab>
-                    <Tab>tab3</Tab>
+                <Tabs className="tab-text" activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+                    <Tab style={{ color: 'white', fontSize: '60px', fontWeight: 'bold', textAlign: 'center'}}>tab0</Tab>
+                   
                 </Tabs>
 
                 
+                <div class="mdl-layout__content">
                     <Grid>
                         <Cell col={12}>
                             <div className="content">
@@ -81,9 +115,14 @@ class Projects extends Component {
                             </div>
                         </Cell>
                     </Grid>
-                   
+                </div>
                 
             </div>
+
+            
+            </div>
+
+            
 
            
         )

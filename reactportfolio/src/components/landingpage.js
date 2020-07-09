@@ -2,6 +2,7 @@ import React, { Component, } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import ParticleComponent from './particlecomponent';
 
+
 class Landing extends Component {
     render() {
         return (
@@ -56,6 +57,8 @@ class Landing extends Component {
                   
                 </Grid>
             <ParticleComponent />
+
+            
                 
             </div>
 

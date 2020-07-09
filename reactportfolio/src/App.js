@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './components/main';
+import { Layout, Header, Navigation, Drawer, Content, Grid, Cell } from 'react-mdl';
 import { Link } from 'react-router-dom';
+import LandingPage from './components/landingpage';
+import Projects from './components/projects';
 
 
 
@@ -28,18 +29,31 @@ function App() {
           </Navigation>
         </Drawer>
         <Content>
-          <div className="page-content" />
+
+
+            <Grid noSpacing style={{width: '100%', height: '100%'}}>
+              <Cell col={1}>
+                <LandingPage/>
+              </Cell>
+            </Grid>
+
+            <Grid noSpacing style={{width: '100%', height: '80%'}}>
+              <Cell col={12}>
+                <Projects/>
+              </Cell>
+            </Grid>
           
-          <Main />
-       
-         
-         
+            
+
         </Content>
-        
+
       </Layout>
 
-      
+
     </div>
+
+
+
   );
 }
 
